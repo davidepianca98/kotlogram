@@ -130,7 +130,7 @@ internal class MTProtoTcpConnection
         val selector = selectionKey?.selector()
         selectionKey?.cancel()
         selector?.wakeup()
-        socketChannel.configureBlocking(true) // Default mode
+        //socketChannel.configureBlocking(true) // Default mode
         return selectionKey
     }
 
